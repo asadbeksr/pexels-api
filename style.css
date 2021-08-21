@@ -15,12 +15,14 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 header h2 {
   padding: 2rem;
 }
+
 #logo {
-   text-decoration: none;
-   color: #000;
+  text-decoration: none;
+  color: #05A081;
 }
 
 .search-form {
@@ -29,18 +31,136 @@ header h2 {
 }
 
 .search-form input {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
   font-size: 2rem;
   padding: 0.5rem;
   width: 100%;
   border: none;
-  border: 1px solid rgb(74, 68, 131);
+  border: 1px solid #05A081;
+}
+.search-form input:focus{
+ outline: none;
+ color: #05A081;
+
+} 
+.search-form input:target{
+  color: blue;
 }
 
-.search-form button{
+.search-form button {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
   border: none;
-  padding: 0.5rem;
+  padding: 1rem;
   font-size: 1rem;
-  background-color: rgb(74, 68, 131);
+  background-color: #05A081;
   color: #fff;
   cursor: pointer;
 }
+
+.search-form button:hover {
+  cursor: zoom-in;
+  transition: all 0.2s ease;
+}
+
+.gallery-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #05A081;
+
+  padding: 0.5rem 0.5rem;
+
+
+}
+
+.gallery-info a {
+  color: gray;
+  text-decoration: none;
+}
+.gallery-info a:hover{
+  color: black;
+  
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  row-gap: 5rem;
+  column-gap: 3rem;
+  padding: 2rem 0rem;
+  width: 80%;
+  margin: auto;
+}
+
+.gallery-img {
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+
+}
+
+.gallery-img:hover {
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  transform: scale(1.1)
+}
+
+
+.gallery-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-button {
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.more {
+  border-radius: 50px;
+  padding: 1rem 3rem;
+  background-color: #05A081;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.more:hover {
+  color: #05A081;
+  background-color: #fff;
+  border: 1px solid #05A081;
+
+}
+
+.container {
+  
+  height: 100%;
+  width: 100%;
+  
+  
+  padding: 1rem;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #05A081;
+  
+}
+
